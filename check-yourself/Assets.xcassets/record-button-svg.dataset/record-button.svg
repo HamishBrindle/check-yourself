@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="158px" height="158px" viewBox="0 0 158 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.2 (51160) - http://www.bohemiancoding.com/sketch -->
+    <title>record-button</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="76" cy="76" r="75"></circle>
+        <filter x="-4.7%" y="-3.3%" width="109.3%" height="109.3%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M114,67.6923077 L114,76 C114,85.5625 110.799045,93.8810096 104.397135,100.955529 C97.9952257,108.030048 90.0850694,112.086538 80.6666667,113.125 L80.6666667,121.692308 L97.3333333,121.692308 C98.4618056,121.692308 99.4383681,122.103365 100.263021,122.925481 C101.087674,123.747596 101.5,124.721154 101.5,125.846154 C101.5,126.971154 101.087674,127.944712 100.263021,128.766827 C99.4383681,129.588942 98.4618056,130 97.3333333,130 L55.6666667,130 C54.5381944,130 53.5616319,129.588942 52.7369792,128.766827 C51.9123264,127.944712 51.5,126.971154 51.5,125.846154 C51.5,124.721154 51.9123264,123.747596 52.7369792,122.925481 C53.5616319,122.103365 54.5381944,121.692308 55.6666667,121.692308 L72.3333333,121.692308 L72.3333333,113.125 C62.9149306,112.086538 55.0047743,108.030048 48.6028646,100.955529 C42.2009549,93.8810096 39,85.5625 39,76 L39,67.6923077 C39,66.5673077 39.4123264,65.59375 40.2369792,64.7716346 C41.0616319,63.9495192 42.0381944,63.5384615 43.1666667,63.5384615 C44.2951389,63.5384615 45.2717014,63.9495192 46.0963542,64.7716346 C46.9210069,65.59375 47.3333333,66.5673077 47.3333333,67.6923077 L47.3333333,76 C47.3333333,84.0048077 50.187066,90.8521635 55.8945313,96.5420673 C61.6019965,102.231971 68.4704861,105.076923 76.5,105.076923 C84.5295139,105.076923 91.3980035,102.231971 97.1054688,96.5420673 C102.812934,90.8521635 105.666667,84.0048077 105.666667,76 L105.666667,67.6923077 C105.666667,66.5673077 106.078993,65.59375 106.903646,64.7716346 C107.728299,63.9495192 108.704861,63.5384615 109.833333,63.5384615 C110.961806,63.5384615 111.938368,63.9495192 112.763021,64.7716346 C113.587674,65.59375 114,66.5673077 114,67.6923077 Z M97.3333333,42.7692308 L97.3333333,76 C97.3333333,81.7115385 95.2934028,86.6009615 91.2135417,90.6682692 C87.1336806,94.7355769 82.2291667,96.7692308 76.5,96.7692308 C70.7708333,96.7692308 65.8663194,94.7355769 61.7864583,90.6682692 C57.7065972,86.6009615 55.6666667,81.7115385 55.6666667,76 L55.6666667,42.7692308 C55.6666667,37.0576923 57.7065972,32.1682692 61.7864583,28.1009615 C65.8663194,24.0336538 70.7708333,22 76.5,22 C82.2291667,22 87.1336806,24.0336538 91.2135417,28.1009615 C95.2934028,32.1682692 97.3333333,37.0576923 97.3333333,42.7692308 Z" id="path-3"></path>
+        <filter x="-2.7%" y="-1.9%" width="105.3%" height="103.7%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="1.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="iPhone-X" transform="translate(-108.000000, -600.000000)">
+            <g id="record-button" transform="translate(111.000000, 601.000000)">
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <g id="Shape" fill-rule="nonzero">
+                    <use fill-opacity="0.810000002" fill="#F82D40" fill-rule="evenodd" xlink:href="#path-3"></use>
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
