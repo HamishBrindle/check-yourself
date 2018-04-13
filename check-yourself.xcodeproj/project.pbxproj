@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B464FE402081333B00715D7C /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = B464FE3F2081333B00715D7C /* Response.swift */; };
 		B4A6E26F2071995E00402352 /* ToneAnalyzerV3.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A6E26E2071995E00402352 /* ToneAnalyzerV3.framework */; };
 		B4A6E2732071A48000402352 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A6E2722071A48000402352 /* Credentials.swift */; };
 		B4A6E2762071A92B00402352 /* AssistantV1.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A6E2742071A92A00402352 /* AssistantV1.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -69,6 +70,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B464FE3F2081333B00715D7C /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		B4A6E26E2071995E00402352 /* ToneAnalyzerV3.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ToneAnalyzerV3.framework; path = Carthage/Build/iOS/ToneAnalyzerV3.framework; sourceTree = "<group>"; };
 		B4A6E2722071A48000402352 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
 		B4A6E2742071A92A00402352 /* AssistantV1.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssistantV1.framework; path = Carthage/Build/iOS/AssistantV1.framework; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 				B4DE8D08206568C600B79FC0 /* check_yourself.xcdatamodeld */,
 				B4A6E2722071A48000402352 /* Credentials.swift */,
 				B4A6E2782071EFF600402352 /* fonts */,
+				B464FE3F2081333B00715D7C /* Response.swift */,
 			);
 			path = "check-yourself";
 			sourceTree = "<group>";
@@ -346,6 +349,7 @@
 				B4DE8D04206568C600B79FC0 /* ViewController.swift in Sources */,
 				B4A6E2732071A48000402352 /* Credentials.swift in Sources */,
 				B4DE8D02206568C600B79FC0 /* AppDelegate.swift in Sources */,
+				B464FE402081333B00715D7C /* Response.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

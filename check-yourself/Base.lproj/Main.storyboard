@@ -32,93 +32,138 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-to-text" translatesAutoresizingMaskIntoConstraints="NO" id="NJo-41-MTs">
-                                <rect key="frame" x="15" y="382.5" width="345" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assistant-reply" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-xu-Pq6">
-                                <rect key="frame" x="16" y="297.5" width="345" height="80"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-oT-2KF">
-                                <rect key="frame" x="41" y="392.5" width="294" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nutmeg-Regular" family="Nutmeg" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press To Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6t-Of-LAU">
-                                <rect key="frame" x="0.0" y="462.5" width="375" height="37"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NutmegHeadline-UltraBlack" family="Nutmeg Headline" pointSize="30"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-wL-nr1">
-                                <rect key="frame" x="41" y="324.5" width="294" height="40"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nutmeg-Regular" family="Nutmeg" pointSize="15"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="sentiment" translatesAutoresizingMaskIntoConstraints="NO" id="SlD-8V-LGS">
-                                <rect key="frame" x="0.0" y="168" width="375" height="98"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dil-Vu-WJv">
-                                <rect key="frame" x="135" y="182" width="61" height="29"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nutmeg-Book" family="Nutmeg" pointSize="24"/>
-                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVs-18-ODE">
-                                <rect key="frame" x="135" y="213" width="224" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Nutmeg-UltraBlackItalic" family="Nutmeg" pointSize="30"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-Xe-azf">
-                                <rect key="frame" x="37" y="43" width="100" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check Yourself" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2U-or-cZc">
-                                <rect key="frame" x="145" y="43" width="214" height="100"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="NutmegHeadline-UltraBlack" family="Nutmeg Headline" pointSize="40"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <size key="shadowOffset" width="1" height="1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1Q-qK-mbA">
-                                <rect key="frame" x="119" y="515" width="137" height="131.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="tintColor" red="0.89207047220000002" green="0.29963868859999998" blue="0.3151269257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Start / Stop" image="record-button">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <connections>
-                                    <action selector="recordButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="TyR-eG-jex"/>
-                                    <action selector="recordButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOU-Xl-YPM"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4fy-XF-Icx">
-                                <rect key="frame" x="51" y="181" width="73" height="73"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hxG-9q-Ofa" userLabel="HeaderView">
+                                <rect key="frame" x="0.0" y="20" width="375" height="130"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Check Yourself" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q2U-or-cZc">
+                                        <rect key="frame" x="153" y="12" width="214" height="97.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NutmegHeadline-UltraBlack" family="Nutmeg Headline" pointSize="40"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <size key="shadowOffset" width="1" height="1"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="cdg-Xe-azf">
+                                        <rect key="frame" x="45" y="12" width="100" height="97.5"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="130" id="kQA-Bq-1th"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QmI-U2-eoC" userLabel="SentimentView">
+                                <rect key="frame" x="0.0" y="150" width="375" height="120"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Waiting..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qVs-18-ODE">
+                                        <rect key="frame" x="104" y="54" width="263" height="36"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nutmeg-UltraBlackItalic" family="Nutmeg" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dil-Vu-WJv">
+                                        <rect key="frame" x="104" y="25" width="61" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nutmeg-Book" family="Nutmeg" pointSize="24"/>
+                                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Siu-34-jN8">
+                                        <rect key="frame" x="16" y="20" width="80" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="120" id="JTr-4T-pHA"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tAy-wf-12P" userLabel="chatView">
+                                <rect key="frame" x="0.0" y="270" width="375" height="180"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="assistant-reply" translatesAutoresizingMaskIntoConstraints="NO" id="Cg2-xu-Pq6">
+                                        <rect key="frame" x="16" y="11" width="343" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="speech-to-text" translatesAutoresizingMaskIntoConstraints="NO" id="NJo-41-MTs">
+                                        <rect key="frame" x="16" y="99" width="345" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="headTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7DK-oT-2KF">
+                                        <rect key="frame" x="40" y="104" width="294" height="49"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nutmeg-Regular" family="Nutmeg" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2D-wL-nr1">
+                                        <rect key="frame" x="40" y="36" width="294" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="Nutmeg-Regular" family="Nutmeg" pointSize="15"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="xog-eX-yPg"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MR4-hB-zpU" userLabel="recordView">
+                                <rect key="frame" x="0.0" y="450" width="375" height="217"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" alpha="0.40000000000000002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Press To Record" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G6t-Of-LAU">
+                                        <rect key="frame" x="0.0" y="6" width="375" height="37"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="NutmegHeadline-UltraBlack" family="Nutmeg Headline" pointSize="30"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1Q-qK-mbA">
+                                        <rect key="frame" x="119" y="51" width="137" height="131"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="tintColor" red="0.89207047220000002" green="0.29963868859999998" blue="0.3151269257" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Start / Stop" image="record-button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="recordButtonDown:" destination="BYZ-38-t0r" eventType="touchDown" id="TyR-eG-jex"/>
+                                            <action selector="recordButtonUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JOU-Xl-YPM"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.9150801301" green="0.2487056255" blue="0.2374553978" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tAy-wf-12P" firstAttribute="top" secondItem="QmI-U2-eoC" secondAttribute="bottom" id="5Pi-EP-Pbz"/>
+                            <constraint firstItem="QmI-U2-eoC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ALc-e7-AR7"/>
+                            <constraint firstItem="tAy-wf-12P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Chf-1f-ewb"/>
+                            <constraint firstItem="MR4-hB-zpU" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Cpj-Y9-epf"/>
+                            <constraint firstItem="MR4-hB-zpU" firstAttribute="top" secondItem="tAy-wf-12P" secondAttribute="bottom" id="IiM-ur-0yR"/>
+                            <constraint firstItem="hxG-9q-Ofa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="J2E-Ln-MNe"/>
+                            <constraint firstItem="MR4-hB-zpU" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OId-6E-fJb"/>
+                            <constraint firstItem="hxG-9q-Ofa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Prz-H5-9Ve"/>
+                            <constraint firstItem="tAy-wf-12P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y2c-S9-3GL"/>
+                            <constraint firstItem="MR4-hB-zpU" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bLE-sY-Og9"/>
+                            <constraint firstItem="MR4-hB-zpU" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dCu-33-2Ij"/>
+                            <constraint firstItem="hxG-9q-Ofa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eSJ-MC-Uuh"/>
+                            <constraint firstItem="QmI-U2-eoC" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="gym-dg-TKa"/>
+                            <constraint firstItem="tAy-wf-12P" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="hTK-Em-9wQ"/>
+                            <constraint firstItem="hxG-9q-Ofa" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pbv-Ur-U6r"/>
+                            <constraint firstItem="QmI-U2-eoC" firstAttribute="top" secondItem="hxG-9q-Ofa" secondAttribute="bottom" id="qIf-3C-Fes"/>
+                            <constraint firstItem="QmI-U2-eoC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="r7k-RM-mKc"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="badge" destination="Siu-34-jN8" id="eHT-PX-9TL"/>
                         <outlet property="recording" destination="G6t-Of-LAU" id="F5r-en-hlA"/>
                         <outlet property="response" destination="N2D-wL-nr1" id="LBq-fS-8wS"/>
                         <outlet property="startButton" destination="O1Q-qK-mbA" id="JhZ-oj-DWa"/>
                         <outlet property="status" destination="7DK-oT-2KF" id="5Z8-BJ-zfB"/>
-                        <outlet property="toneBadge" destination="4fy-XF-Icx" id="GEZ-qC-KO4"/>
                         <outlet property="toneLabel" destination="qVs-18-ODE" id="orY-9M-exs"/>
                     </connections>
                 </viewController>
@@ -131,7 +176,6 @@
         <image name="assistant-reply" width="1670" height="410"/>
         <image name="logo" width="555" height="555"/>
         <image name="record-button" width="948" height="948"/>
-        <image name="sentiment" width="375" height="124"/>
         <image name="speech-to-text" width="1705" height="430"/>
     </resources>
 </document>

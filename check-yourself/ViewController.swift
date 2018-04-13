@@ -17,11 +17,11 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
     // MARK: Properties
     
     // Outlets
+    @IBOutlet weak var badge: UIView!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var status: UILabel!
     @IBOutlet weak var response: UILabel!
     @IBOutlet weak var toneLabel: UILabel!
-    @IBOutlet weak var toneBadge: UIImageView!
     @IBOutlet weak var recording: UILabel!
     
     // UI
@@ -50,18 +50,24 @@ class ViewController: UIViewController, SFSpeechRecognizerDelegate {
         super.viewDidLoad()
         setupUI()
         setupWatsonServices()
-        startAssistant()
+        // startAssistant()
     }
 }
 
 // MARK: - Overrides
 extension ViewController {
     
+    /// Color of the status bar
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     /// Not entirely sure why we need this yet, but we do
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         gradient.frame = status.bounds
     }
+    
 }
 
 // MARK: - Watson Services
@@ -84,7 +90,7 @@ extension ViewController {
     /// Present an error message if shit goes sideways
     func failure(error: Error) {
         let alert = UIAlertController(
-            title: "Watson Error",
+            title: "Not Connected!",
             message: error.localizedDescription,
             preferredStyle: .alert
         )
@@ -136,6 +142,11 @@ extension ViewController {
         }
     }
     
+    /// Without the use of Watson, we use our own responses (boring).
+    func presentResponse() {
+        self.response.text = Response.getResponse(tone: toneResponse!)
+    }
+    
     /// Send input to API for tone analysis
     func requestTone(input: String) {
         
@@ -155,6 +166,11 @@ extension ViewController {
         // Processing is done, present results to user
         dispatchGroup.notify(queue: .main) {
             self.toneLabel.text = self.toneResponse
+            self.presentResponse()
+            
+            let badgeColor: UIColor = Response.getBadgeColor(tone: self.toneResponse!)
+            self.badge.backgroundColor = badgeColor
+            
             self.recording.text = "Press To Record"
         }
     }
@@ -168,21 +184,14 @@ extension ViewController {
         
         // The number of recognized tones
         let count = tone.documentTone.tones!.count
+        
         if count == 0 {
             return "Neutral"
         }
         
-        // Starting off our list of tones
         return tone.documentTone.tones![safe: 0]!.toneName
-        
-//        // And concatenating all the others
-//        for index in 1 ..< count {
-//            emotion += " and "
-//            emotion += tone.documentTone.tones![safe: index]!.toneName
-//        }
-//
-//        return emotion // This is a string containing the tones we display to user
     }
+    
 }
 
 // MARK: - Speech-to-Text
@@ -257,7 +266,6 @@ extension ViewController {
             
             // Request the sentiment of the user's input
             requestTone(input: i)
-            sendAssistantMessage(input: i)
             
         }
     }
@@ -275,6 +283,8 @@ extension ViewController {
         gradient.locations = [0, 0, 0.9, 1]
         gradient.transform = CATransform3DMakeRotation(CGFloat.pi / 2, 0, 0, 1)
         status.layer.mask = gradient
+        
+        badge.layer.cornerRadius = 20
     }
     
     /// Listener: Holding down record button
